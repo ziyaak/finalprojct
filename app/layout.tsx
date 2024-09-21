@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import HeaderTop from "@/src/components/HeaderTop";
+import HeaderMain from "@/src/components/HeaderMain";
+import CatMenu from "@/src/components/CatMenu";
+import ProductShowcase from "@/src/components/MainMenu";
 
 
 
@@ -18,6 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body >
           <HeaderTop/>
+          <HeaderMain/>
+          <CatMenu/>
+          <ProductShowcase/>
         {children}
         </body>
     </html>
